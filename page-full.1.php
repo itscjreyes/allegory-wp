@@ -1,10 +1,30 @@
 <?php
 
 /*
-	Template Name: Full Page
-*/
+	Template Name: Landing Page
+*/  ?>
 
-get_header();  ?>
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+	<?php // Load Meta ?>
+  <meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><?php  wp_title('|', true, 'right'); ?></title>
+  <link rel="icon" type="image/png" href="/wp-content/uploads/2019/02/favicon.png">
+  <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+  <!-- stylesheets should be enqueued in functions.php -->
+  <?php wp_head(); ?>
+</head>
+
+
+<body class="landingPage">
+
+<header>
+    <div class="container">
+        <a href="/" class="headerLogo"><img src="/wp-content/uploads/2019/02/logo-white.png" alt="Allegory Insurance"></a>
+    </div>
+</header>
 
 <?php
 // check if the flexible content field has rows of data
@@ -195,4 +215,11 @@ else :
 endif;
 ?>
 
-<?php get_footer(); ?>
+<footer>
+  <div class="copyright">
+    <p>Allegory Insurance | Copyright &copy; 2019 <span class="mobileHidden">|</span> <span><a href="/privacy-policy">Privacy Policy</a></span></p>
+  </div>
+</footer>
+<?php wp_footer(); ?>
+</body>
+</html>

@@ -1,10 +1,4 @@
-<?php
-
-/*
-	Template Name: Full Page
-*/
-
-get_header();  ?>
+<?php get_header(); ?>
 
 <?php
 // check if the flexible content field has rows of data

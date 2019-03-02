@@ -1,3 +1,56 @@
+////////////////////
+// Footer
+////////////////////
+
 footer {
-	clear: both;
+    position: relative;
+    background: rgba(0, 206, 209, .25);
+
+    img.footerBG {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        padding-bottom: 0;
+        padding-top: 6%;
+    }
+
+    img.footerLogo {
+        width: 125px;
+    }
+
+    .socialGroup {
+        text-align: right;
+
+        a {
+            display: inline-block;
+            color: inherit;
+            margin: 5px;
+
+            &:hover,
+            &:focus {
+                color: $darkBlue;
+            }
+        }
+    }
+
+    .copyright {
+        padding: 20px;
+        text-align: center;
+        
+        p {
+            font-size: 14px;
+        }
+
+        a {
+            color: inherit;
+        }
+    }
 }

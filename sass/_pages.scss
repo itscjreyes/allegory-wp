@@ -1,0 +1,494 @@
+////////////////////
+// Banner
+////////////////////
+
+.banner {
+   position: relative;
+
+   > img {
+       position: absolute;
+       width: 100%;
+       max-width: 1600px;
+       margin: auto;
+       left: 0;
+       right: 0;
+       top: 0;
+       transition: all 0.1s ease;
+   }
+
+   .container {
+       position: relative;
+       padding-top: calc(6% + 150px);
+   }
+
+   h1, h2 {
+       width: 55%;
+       color: white;
+   }
+   
+   h1 {
+       max-width: 600px;
+       font-size: 50px;
+       padding-bottom: 20px;
+   }
+
+   h2 {
+       max-width: 550px;
+       font-family: $fontMain;
+       font-weight: 400;
+       font-size: 24px;
+   }
+}
+
+.bannerPhone {
+   position: absolute;
+   max-width: 250px;
+   right: 15%;
+   bottom: -100px;
+}
+
+html.sr .bannerPhone {
+    visibility: hidden;
+}
+
+////////////////////
+// Landing Page Banner
+////////////////////
+
+.landingPage {
+    background: $blueGradient;
+    min-height: 100vh;
+
+    footer {
+        background: transparent;
+        color: white;
+    }
+}
+
+.lpBanner {
+    .container {
+        padding-top: calc(6% + 150px);
+        padding-bottom: 40vh;
+    }
+
+    h1,
+    h2 {
+        text-align: center;
+        color: white;
+    }
+
+    h1 {
+        font-size: 55px;
+    }
+
+    h2 {
+        font-size: 26px;
+        margin-top: 20px;
+        font-weight: 400;
+        font-family: $fontMain;
+    }
+}
+
+////////////////////
+// How It Works
+////////////////////
+
+.howItWorks {
+   margin-top: calc(6% + 100px);
+
+   h2 {
+       text-align: center;
+       margin-bottom: 30px;
+   }
+}
+
+.stepsGroup {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+
+p.stepNumber {
+   display: inline-block;
+   font-family: $fontTitle;
+   color: $lightBlue;
+   font-size: 30px;
+   margin-bottom: 10px;
+   border: 1px solid $lightBlue;
+   line-height: 1;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   text-align: center;
+}
+
+.step {
+   width: 30%;
+   margin-top: 50px;
+
+   h3 {
+       font-family: $fontMain;
+       margin-bottom: 10px;
+       font-size: 24px;
+   }
+}
+
+////////////////////
+// Two Column
+////////////////////
+
+.textRight,
+.titleLeft {
+   .container {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+   
+   .imgWrapper,
+   .title,
+   .contentWrapper {
+       width: 45%;
+   }
+
+   .imgWrapper {
+       text-align: center;
+   }
+
+   img {
+       max-width: 400px;
+   }
+
+   h2 {
+       margin-bottom: 40px;
+   }
+
+   p {
+       padding: 10px 0;
+   }
+}
+
+.titleLeft {
+   .container {
+       align-items: flex-start;
+   }
+
+   .title {
+       text-align: right;
+   }
+}
+
+////////////////////
+// Features
+////////////////////
+
+.featuresGroup {
+   .container {
+       display: flex;
+       justify-content: center;
+       align-items: stretch;
+       flex-wrap: wrap;
+   }
+}
+
+.feature {
+   width: calc(100% / 3 - 80px);
+   margin: 40px;
+   text-align: center;
+
+   .icon {
+       height: 50px;
+       width: auto;
+   }
+
+   h3 {
+       font-family: $fontMain;
+       font-weight: 600;
+       margin: 20px 0 10px;
+       font-size: 24px;
+   }
+}
+
+////////////////////
+// Blue Banner
+////////////////////
+
+.blueBanner {
+   background: $blueGradient;
+   
+   .container {
+       padding: 6%;
+       max-width: 700px;
+       text-align: center;
+   }
+
+   h2 {
+       color: white;
+       font-size: 40px;
+   }
+}
+
+////////////////////
+// Testimonials
+////////////////////
+
+.testimonials {
+   h2 {
+       text-align: center;
+   }
+}
+
+.testsGroup {
+   display: flex;
+   justify-content: center;
+   align-items: stretch;
+   flex-wrap: wrap;
+   margin-top: 100px;
+}
+
+.test {
+   position: relative;
+   box-shadow: $boxShadow;
+   background: white;
+   text-align: center;
+   padding: 80px 40px 40px;
+   width: calc(100% / 3 - 40px);
+   margin: 20px;
+
+   img {
+       position: absolute;
+       top: -50px;
+       left: 0;
+       right: 0;
+       margin: auto;
+   }
+
+   h3 {
+       font-family: $fontMain;
+       font-size: 24px;
+       margin-bottom: 10px;
+   }
+
+   p {
+       font-size: 14px;
+   }
+}
+
+////////////////////
+// CTA Banner
+////////////////////
+
+.ctaBanner {
+   .wrapper {
+       background: $blueGradient;
+       text-align: center;
+       padding: 6%;
+       border-radius: 5px;
+       max-width: 1000px;
+       margin: auto;
+   }
+
+   h2 {
+       color: white;
+   }
+}
+
+////////////////////
+// FAQs
+////////////////////
+
+.faqs {
+   h2 {
+       text-align: center;
+       margin-bottom: 50px;
+   }
+}
+
+.faqGroup {
+    &:not(:first-child) {
+        margin-top: 50px;
+    }
+
+   h3 {
+       font-family: $fontMain;
+       font-size: 26px;
+       text-transform: uppercase;
+       margin-bottom: 20px;
+   }
+}
+
+.faqSingle {
+   padding: 5px 2%;
+   transition: $transition;
+
+   button {
+       display: flex;
+       justify-content: space-between;
+       align-items: flex-start;
+       width: 100%;
+       background: transparent;
+       border: 0;
+       outline: 0;
+
+       h4 {
+           font-family: $fontMain;
+           font-size: 20px;
+           text-align: left;
+           width: 80%;
+       }
+
+       .fa {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           width: 30px;
+           height: 30px;
+           border-radius: 50%;
+           font-size: 28px;
+           background: $yellow;
+           color: white;
+           transition: $transition;
+       }
+   }
+
+   &.active {
+       padding: 20px 2%;
+       margin: 20px 0;
+       box-shadow: $boxShadow;
+
+       button .fa {
+           transform: rotate(180deg);
+       }
+   }
+}
+
+.faqBlock {
+   display: none;
+   padding: 2% 8% 2% 4%;
+}
+
+////////////////////
+// LP Form
+////////////////////
+
+.mc4wp-form-fields {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+    input[type="email"] {
+        background: rgba(255,255,255,0.75);
+        border: 0;
+        border-radius: 5px;
+        padding: 5px 20px;
+        margin-right: 20px;
+        width: 300px;
+    }
+
+    input[type="submit"] {
+        padding: 5px 40px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 500;
+        color: $black;
+        background: $yellow;
+
+        &:hover,
+        &:focus {
+            box-shadow: $boxShadow;
+            transform: translateY(-2px);
+            background: $yellowHover;
+        }
+    }
+}
+
+.mc4wp-response p {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+////////////////////
+// Inner Page
+////////////////////
+
+.innerBanner {
+    background: $blueGradient;
+    
+    .container {
+        padding-top: calc(6% + 80px);
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 50px;
+        color: white;
+    }
+}
+
+.thinColumn {
+    .container {
+        max-width: 1000px;
+    }
+
+    h2, h3, h4, h5 {
+		padding: 20px 0 5px;
+		margin: 0;
+	}
+
+	h2 {
+		font-size: 32px;
+	}
+
+	h3 {
+		font-size: 28px;
+	}
+
+	h4 {
+		font-size: 24px;
+	}
+
+	h5 {
+		font-size: 20px;
+	}
+
+	ul, ol {
+		padding: 0 0 0 20px;
+		margin: 10px 0;
+    }
+    
+    p,
+    li {
+        font-size: 18px;
+    }
+
+    p {
+        padding: 10px 0;
+    }
+
+	li {
+        padding: 5px 0;
+        
+        p {
+            padding: 0;
+        }
+	}
+
+	blockquote {
+		border-left: 5px solid $blueGradient;
+		margin-left: 0;
+		padding-left: 20px;
+		font-size: 28px;
+	}
+
+	a:not(.btn) {
+		color: $darkBlue;
+        text-decoration: underline;
+		
+		&:hover,
+		&:focus {
+            text-decoration: none;
+		}
+	}
+}

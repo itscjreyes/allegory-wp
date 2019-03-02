@@ -1,5 +1,5 @@
 /*!
-* Theme Name: HackerYou Starter Theme
+* Theme Name: Allegory Custom Theme
 * Theme URI: http://hackeryou.com;
 * Description: Starter theme for building any website. Created by HackerYou. * Rename this to your own theme page.
 * Version: 1.0
@@ -7,45 +7,89 @@
 * Author URI: http://hackeryou.com
 */
 
-@import 'normalize';
-@import 'typography';
-@import 'navigation';
-@import 'sidebar';
-@import 'comments';
-@import 'footer';
-/*
-====================================
-Default Styling
-====================================
-*/
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700|Poppins:400,500');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-img {
-	max-width: 100%;
-}
+$fontTitle: 'Playfair Display', serif;
+$fontMain: 'Poppins', sans-serif;
+
+$lightBlue: #00ced1;
+$darkBlue: #009cbf;
+$black: #101010;
+$yellow: #f9c637;
+$yellowHover: #f8bf20;
+$blueGradient: linear-gradient(to top, $darkBlue, $lightBlue);
+
+$boxShadow: 0 5px 15px rgba(0,0,0,0.1);
+$transition: all 0.2s ease;
+
+////////////////////
+// General
+////////////////////
 
 body {
-	color: #333;
+    font-family: $fontMain;
+    color: $black;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $fontTitle;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+p, li {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+a {
+    font-family: inherit;
+    text-decoration: none;
+    transition: $transition;
 }
 
 .container {
-	max-width: 1200px;
-	margin: 0 auto;
+    padding: 4% 6%;
+    max-width: 1450px;
+    margin: auto;
 }
 
-.content {
-	float: left;
-	width: 65%;
-	margin-right: 5%;
+section {
+    outline: none;
 }
 
-.full {
-	width: 100%;
+////////////////////
+// Buttons
+////////////////////
+
+.btn {
+    display: inline-block;
+    padding: 8px 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 40px;
+
+    &:hover,
+    &:focus {
+        box-shadow: $boxShadow;
+        transform: translateY(-2px);
+        background: $yellowHover;
+    }
 }
 
+.btnYellow {
+    color: $black;
+    background: $yellow;
+}
 
-
-
-
-
-
-
+@import 'normalize';
+@import 'navigation';
+@import 'pages';
+@import 'footer';
+@import 'mediaQueries';

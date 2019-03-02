@@ -1,17 +1,17 @@
 <footer>
-  <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
-  </div>
+    <img src="/wp-content/uploads/2019/02/footer-bg-white.png" alt="" class="footerBG">
+    <div class="container">
+        <img src="/wp-content/uploads/2019/02/logo-black.png" alt="Allegory Insurance" class="footerLogo">
+        <div class="socialGroup">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; 2019 | <a href="/privacy-policy">Privacy Policy</a></p>
+    </div>
 </footer>
-
-<script>
-// scripts.js, plugins.js and jquery are enqueued in functions.php
-/* Google Analytics! */
- var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]]; // Change UA-XXXXX-X to be your site's ID
- (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
- g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
- s.parentNode.insertBefore(g,s)}(document,"script"));
-</script>
 
 <?php wp_footer(); ?>
 </body>
