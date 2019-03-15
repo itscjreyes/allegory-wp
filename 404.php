@@ -1,13 +1,18 @@
 <?php get_header(); ?>
 
-<div class="main">
-  <div class="container">
+<main class="landingPage">
+  <section class="lpBanner">
+    <div class="container">
+      <h1>404</h1>
+      <h2>Sorry! This page doesn't exist.</h2>
+      <a href="/" class="btn btnYellow">Go Home</a>
+    </div>
+  </section>
+  <footer>
+    <div class="copyright">
+      <p>Allegory Insurance | Copyright &copy; 2019 <span class="mobileHidden">|</span> <span><a href="/privacy-policy">Privacy Policy</a></span></p>
+    </div>
+  </footer>
+</main>
 
-    <h1>Not Found</h1>
-    <p>Apologies, but the page you requested could not be found. Perhaps searching will help.</p>
-    <?php get_search_form(); ?>
-
-  </div> <!-- /.container -->
-</div> <!-- /.main -->
-
-<?php get_footer(); ?>
+<?php wp_footer(); ?>
